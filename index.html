@@ -22,7 +22,33 @@
 <meta property="og:image:alt" content="weknowpharma — find the right pharma partner by capability, certification, and capacity">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="og-image.png">
+<meta property="og:url" content="https://weknowpharma.com/">
+<link rel="canonical" href="https://weknowpharma.com/">
 <meta name="theme-color" content="#0f2e3d">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://weknowpharma.com/#organization",
+      "name": "weknowpharma",
+      "url": "https://weknowpharma.com/",
+      "email": "hello@weknowpharma.com",
+      "description": "weknowpharma is a global B2B marketplace for pharmaceutical services. It helps pharma and biotech companies find manufacturing partners — CDMOs, contract labs and suppliers — by capability, certification, region and available capacity.",
+      "logo": "https://weknowpharma.com/og-image.png"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://weknowpharma.com/#website",
+      "name": "weknowpharma",
+      "url": "https://weknowpharma.com/",
+      "description": "Find pharmaceutical manufacturing and service partners by capability, certification and capacity — sterile fill & finish, API manufacturing, analytical/QC, packaging and formulation development.",
+      "publisher": { "@id": "https://weknowpharma.com/#organization" }
+    }
+  ]
+}
+</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='10' y='10' width='34' height='34' rx='8' fill='%230e7c86'/%3E%3Crect x='22' y='22' width='32' height='32' rx='8' fill='%2313b5ac' opacity='.6'/%3E%3C/svg%3E">
 <style>
   /* Inter (variable, latin subset) — self-hosted & embedded: no external requests, identical rendering offline.
@@ -305,6 +331,23 @@
   .consent a{color:var(--teal);font-weight:600}
   @media(max-width:600px){.onb{padding:24px 18px}.chk-grid,.chk-grid.cols3{grid-template-columns:1fr}}
 
+  /* ---------- Content pages (about, how, trust, FAQ, contact) ---------- */
+  .page{max-width:780px;margin:0 auto}
+  .page .p-h1{font-size:32px;margin-top:8px}
+  .page .p-intro{margin-top:14px;font-size:16.5px;color:var(--muted);line-height:1.6}
+  .page h2.p-h2{font-size:20px;margin-top:34px}
+  .page p.p-body{margin-top:12px;font-size:15px;line-height:1.65}
+  .page ul.p-list{list-style:disc;padding-left:22px;margin-top:12px}
+  .page ul.p-list li{padding:3px 0;font-size:15px;line-height:1.6}
+  .page .p-cta{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap}
+  .faq-item{background:#fff;border:1px solid var(--line);border-radius:12px;margin-top:12px;padding:2px 18px}
+  .faq-item summary{cursor:pointer;font-weight:600;font-size:15px;color:var(--navy);padding:14px 0;
+    list-style:none;display:flex;justify-content:space-between;gap:14px;align-items:baseline}
+  .faq-item summary::-webkit-details-marker{display:none}
+  .faq-item summary::after{content:"+";color:var(--teal);font-weight:700;font-size:19px;flex:none}
+  .faq-item[open] summary::after{content:"–"}
+  .faq-item .faq-a{margin:0 0 16px;color:var(--muted);font-size:14.5px;line-height:1.6}
+
   /* ---------- Not found ---------- */
   .nf{max-width:560px;margin:0 auto;text-align:center;padding:40px 0}
   .nf h1{font-size:28px}
@@ -394,7 +437,51 @@
 </header>
 
 <main id="main" tabindex="-1">
-  <noscript><div class="wrap" style="padding:60px 24px"><h1>JavaScript required</h1><p>Please enable JavaScript to use weknowpharma.</p></div></noscript>
+  <!-- Static, crawlable content. Rendered in the initial HTML so search engines and
+       no-JS visitors see real information; the client-side app replaces it on load. -->
+  <section class="hero"><div class="wrap hero-in">
+    <h1>Find the right pharma partner — by capability, certification, and capacity.</h1>
+    <p class="sub">weknowpharma is the global B2B marketplace for pharmaceutical services. Discover vetted CDMOs, labs and suppliers with real availability — then contact them privately.</p>
+    <div class="dual">
+      <a class="btn btn-primary" href="#/request">Post a request</a>
+      <a class="btn btn-ghost" href="#/results">Find a partner</a>
+    </div>
+    <ul class="trust">
+      <li><b>Capacity-aware</b> matching — not a static directory</li>
+      <li><b>FDA · EMA · PMDA · NMPA · MHRA</b> standards covered</li>
+      <li><b>Private</b> requests — you stay in control</li>
+    </ul>
+  </div></section>
+
+  <section class="block"><div class="wrap page">
+    <p class="eyebrow">What weknowpharma is</p>
+    <h2 class="h2c">A discovery and connection platform for pharmaceutical outsourcing.</h2>
+    <p>weknowpharma helps pharmaceutical and biotech companies find manufacturing and service partners. Instead of static directories and cold outreach, buyers search by what actually decides a project: capability, regulatory certification, region served, and — critically — available capacity. Suppliers list their capabilities once and receive matched, qualified requests. weknowpharma is a B2B platform for companies: it is not a pharmacy and does not sell medicines to patients.</p>
+  </div></section>
+
+  <section class="block" style="padding-top:0"><div class="wrap">
+    <p class="eyebrow">Service categories</p>
+    <h2 class="h2c">What you can source on weknowpharma.</h2>
+    <div class="steps">
+      <div class="step"><h3>Sterile fill &amp; finish</h3><p>Aseptic filling of injectables — vials, prefilled syringes, cartridges, ampoules.</p></div>
+      <div class="step"><h3>API manufacturing</h3><p>Drug substance and intermediates, from clinical supply to commercial volumes.</p></div>
+      <div class="step"><h3>Analytical / QC</h3><p>Contract testing, batch release and stability studies.</p></div>
+      <div class="step"><h3>Packaging &amp; labeling</h3><p>Secondary packaging, serialization and aggregation.</p></div>
+      <div class="step"><h3>Formulation development</h3><p>Formulation, lyophilization development and tech transfer.</p></div>
+    </div>
+  </div></section>
+
+  <section class="block" style="padding-top:0"><div class="wrap">
+    <p class="eyebrow">How it works</p>
+    <h2 class="h2c">Demand-first, not shelf-first.</h2>
+    <div class="steps">
+      <div class="step"><div class="n" aria-hidden="true">1</div><h3>Search &amp; compare</h3><p>Filter vetted suppliers by capability, certification, region and capacity band. Compare them side by side.</p></div>
+      <div class="step"><div class="n" aria-hidden="true">2</div><h3>Post a private request</h3><p>Describe your project once. It is matched to suitable suppliers while your identity stays hidden until you choose to reveal it.</p></div>
+      <div class="step"><div class="n" aria-hidden="true">3</div><h3>Get real answers</h3><p>Matched suppliers respond privately with exact capacity, lead times and terms. No public tickers, no cold outreach.</p></div>
+    </div>
+  </div></section>
+
+  <noscript><div class="wrap page" style="padding:0 24px 40px"><p class="muted">Interactive search, comparison and the request form require JavaScript. Everything above is fully readable without it — and you can always reach us at <a class="link-btn" href="mailto:hello@weknowpharma.com">hello@weknowpharma.com</a>.</p></div></noscript>
 </main>
 
 <footer>
@@ -416,21 +503,23 @@
         <h2>Standards</h2>
         <span class="fo-txt">FDA · EMA · MHRA</span>
         <span class="fo-txt">PMDA · NMPA</span>
-        <button type="button" class="fo-link" data-toast="Supplier verification documentation is part of the live build.">Verification</button>
+        <a href="#/trust">Verification</a>
       </div>
       <div>
         <h2>Company</h2>
-        <button type="button" class="fo-link" data-toast="Coming in the live build.">About</button>
-        <button type="button" class="fo-link" data-toast="Coming in the live build.">Trust &amp; security</button>
-        <button type="button" class="fo-link" data-toast="Coming in the live build.">Contact</button>
+        <a href="#/about">About</a>
+        <a href="#/how">How it works</a>
+        <a href="#/trust">Trust &amp; security</a>
+        <a href="#/faq">FAQ</a>
+        <a href="#/contact">Contact</a>
       </div>
     </div>
     <div class="foot-bot">
       <span>© 2026 weknowpharma — prototype with sample data</span>
       <span>
-        <button type="button" class="fo-link" data-toast="Legal pages are part of the live build.">Privacy</button> ·
-        <button type="button" class="fo-link" data-toast="Legal pages are part of the live build.">Terms</button> ·
-        <button type="button" class="fo-link" data-toast="Legal pages are part of the live build.">Imprint</button>
+        <a class="fo-link" href="#/privacy">Privacy</a> ·
+        <a class="fo-link" href="#/terms">Terms</a> ·
+        <a class="fo-link" href="#/imprint">Imprint</a>
       </span>
     </div>
   </div>
@@ -576,26 +665,25 @@ function route(){
   let title="weknowpharma — pharma partners by capability, certification & capacity";
   switch(r.page){
     case "home": renderHome(main);break;
-    case "how": renderHome(main);break;
+    case "how": renderHow(main);title="How it works · weknowpharma";break;
+    case "about": renderAbout(main);title="About · weknowpharma";break;
+    case "trust": renderTrust(main);title="Trust & security · weknowpharma";break;
+    case "faq": renderFaq(main);title="FAQ · weknowpharma";break;
+    case "contact": renderContact(main);title="Contact · weknowpharma";break;
     case "results": renderResults(main,r.params);title="Suppliers · weknowpharma";break;
     case "compare": renderCompare(main,r.params);title="Compare suppliers · weknowpharma";break;
     case "profile":{const sp=bySlug(r.arg);renderProfile(main,r.arg);if(sp)title=sp.name+" · weknowpharma";break;}
     case "request": renderRequest(main,r.params);title="Post a request · weknowpharma";break;
     case "suppliers": renderSuppliers(main);title="For suppliers & pricing · weknowpharma";break;
     case "list": renderListing(main);title="List your capabilities · weknowpharma";break;
-    case "privacy": renderNotFound(main,{title:"Privacy Policy",
-      msg:"The full privacy policy is being finalized for the live build. In short: your data is used only to match and contact you about your request, and is never sold. Questions: hello@weknowpharma.com"});
-      title="Privacy · weknowpharma";break;
+    case "privacy": renderPrivacy(main);title="Datenschutz · weknowpharma";break;
+    case "terms": renderTerms(main);title="Nutzungsbedingungen · weknowpharma";break;
+    case "imprint": renderImprint(main);title="Impressum · weknowpharma";break;
     default: renderNotFound(main);title="Page not found · weknowpharma";
   }
   document.title=title;
   setActiveNav(r.page==="list"?"suppliers":r.page);
   closeMobileMenu();
-  if(r.page==="how"){
-    const el=$("#how");
-    if(el&&el.scrollIntoView)el.scrollIntoView({behavior:"smooth"});
-    return;
-  }
   window.scrollTo({top:0,behavior:"instant"});
   const h=main.querySelector("h1");
   if(h){h.setAttribute("tabindex","-1");h.focus({preventScroll:true});}
@@ -1254,6 +1342,148 @@ function renderListingDone(main,name){
   if(h){h.setAttribute("tabindex","-1");h.focus({preventScroll:true});}
 }
 
+/* ================= Views: Content pages ================= */
+function contentPage(eyebrow,h1,bodyHtml){
+  return '<section class="block view-anim"><div class="wrap page">'+
+    '<p class="eyebrow">'+esc(eyebrow)+'</p>'+
+    '<h1 class="p-h1">'+esc(h1)+"</h1>"+bodyHtml+"</div></section>";
+}
+function renderAbout(main){
+  main.innerHTML=contentPage("Company","About weknowpharma",
+    '<p class="p-intro">weknowpharma is a global B2B marketplace for pharmaceutical services. It connects companies that need manufacturing, testing, packaging or development work with the CDMOs, contract labs and suppliers that can actually take it on.</p>'+
+    '<h2 class="p-h2">What it is</h2>'+
+    '<p class="p-body">A discovery and connection platform for pharmaceutical outsourcing. Buyers search suppliers by service category, dosage form, regulatory certification (FDA, EMA, PMDA, NMPA, MHRA), region served and capacity band — then post a private request that is matched to suitable partners. Suppliers maintain a single structured profile and receive qualified, project-specific requests instead of cold inquiries.</p>'+
+    '<h2 class="p-h2">Why it exists</h2>'+
+    '<p class="p-body">Finding an outsourcing partner in pharma still runs on conference contacts, static directories and weeks of email. Directories tell you who exists — not who is certified for your market, works in your dosage form, and has capacity in your timeframe. That last question is usually the one that decides a project, and it is the one no directory answers.</p>'+
+    '<p class="p-body">weknowpharma was built to close that gap: supplier profiles carry capability, certification and capacity information as structured data, so a search returns partners who can plausibly say yes — and a request reaches only those partners, privately.</p>'+
+    '<h2 class="p-h2">What it is not</h2>'+
+    '<p class="p-body">weknowpharma is a platform for companies. It is not a pharmacy, it does not sell or broker finished medicines, and it does not handle patient data of any kind.</p>'+
+    '<div class="p-cta"><a class="btn btn-primary" href="#/request">Post a request</a><a class="btn btn-ghost" href="#/contact">Contact us</a></div>');
+}
+function renderHow(main){
+  main.innerHTML=contentPage("How it works","Demand-first, not shelf-first.",
+    '<p class="p-intro">Most sourcing tools show you a shelf of company names and leave the hard part — qualification, capacity, outreach — to you. weknowpharma turns that around: you describe the demand, and the platform finds the suppliers who can meet it.</p>'+
+    '<h2 class="p-h2">1 · Search &amp; compare</h2>'+
+    '<p class="p-body">Filter suppliers by service category, dosage form, certification, region served and capacity band. Every profile shows the same structured facts — certifications held, machinery, batch scales, capacity now and over the next 24 months — so you compare like with like. Shortlist up to three suppliers and view them side by side in a comparison table.</p>'+
+    '<h2 class="p-h2">2 · Post a private request</h2>'+
+    '<p class="p-body">Describe your project once: service, dosage form, regulatory standard, target market, batch scale, volumes and timeframe. The request is matched against supplier profiles and forwarded only to suitable partners. You choose whether to share your company name or stay anonymous until a response convinces you — competitors and the public never see what you are sourcing.</p>'+
+    '<h2 class="p-h2">3 · Get real answers</h2>'+
+    '<p class="p-body">Matched suppliers respond privately with exact capacity, lead times and commercial terms. Public profiles show capacity as bands only; the precise figures appear in a private response to your specific request. No public tickers, no cold outreach, no obligation — you decide which conversations to continue.</p>'+
+    '<div class="p-cta"><a class="btn btn-primary" href="#/request">Post a request</a><a class="btn btn-ghost" href="#/results">Browse suppliers</a></div>');
+}
+function renderTrust(main){
+  main.innerHTML=contentPage("Trust & security","Trust & security",
+    '<p class="p-intro">Outsourcing decisions in pharma carry regulatory and commercial risk. The platform is designed around two principles: verified supplier information, and confidentiality for both sides.</p>'+
+    '<h2 class="p-h2">Supplier verification</h2>'+
+    '<p class="p-body">Every listing is reviewed before it appears in search results. Verification checks that the company exists, that claimed certifications correspond to public regulator records (such as EudraGMDP and FDA databases), and that stated capabilities are plausible for the facility. Verified suppliers carry a visible badge; unverified listings are marked as such. Verification supports your shortlisting — it does not replace your own audit and qualification process.</p>'+
+    '<h2 class="p-h2">Capacity stays private</h2>'+
+    '<p class="p-body">Public profiles show capacity only in coarse bands (Open, Moderate, Limited). Exact figures, machine allocations and lead times are shared by the supplier privately, and only in response to a matched request. No supplier is asked to publish commercially sensitive utilization data.</p>'+
+    '<h2 class="p-h2">Data handling</h2>'+
+    '<p class="p-body">Requests are confidential: buyers can stay anonymous until they choose to reveal themselves, and request details are visible only to matched suppliers. Contact and company data submitted through forms is used solely to match and respond to the request — it is not sold, and it is not shared beyond the matched parties. The platform runs without third-party trackers or advertising scripts.</p>'+
+    '<h2 class="p-h2">Guardrails</h2>'+
+    '<ul class="p-list">'+
+    "<li>weknowpharma is <b>not a pharmacy</b> and does not sell, broker or ship medicines.</li>"+
+    "<li>It is a B2B platform for companies — <b>no patient data</b> is collected or processed.</li>"+
+    "<li>It does not take a position in the transaction: contracts, audits and quality agreements remain between buyer and supplier.</li>"+
+    "</ul>"+
+    '<div class="p-cta"><a class="btn btn-ghost" href="#/faq">Read the FAQ</a><a class="btn btn-ghost" href="#/contact">Ask a question</a></div>');
+}
+function renderFaq(main){
+  const faqs=[
+    ["What is weknowpharma?",
+     "A global B2B marketplace for pharmaceutical services. Companies that need manufacturing, testing, packaging or development work find and contact CDMOs, contract labs and suppliers — filtered by capability, certification, region and available capacity."],
+    ["Who is it for?",
+     "Pharma and biotech companies sourcing external capacity (from clinical supply to commercial volumes), and the suppliers who provide it: CDMOs, CMOs, contract laboratories, packaging and serialization specialists, and development service providers. It is not for patients or consumers."],
+    ["Is supplier capacity shown publicly?",
+     "Only as coarse bands — Open, Moderate or Limited — for now and for the next 24 months. Exact capacity figures, line allocations and lead times are never public: suppliers share them privately when they respond to a matched request."],
+    ["How do requests work?",
+     "You describe your project once — service, dosage form, regulatory standard, market, scale, volumes and timeframe. The request is matched to suitable suppliers and shared only with them. You can stay anonymous until you decide to reveal your company, and matched suppliers respond privately with real numbers and terms."],
+    ["Is it free for buyers?",
+     "Yes. Searching, comparing and posting requests is free for buyers. Suppliers list basic profiles for free and can pay for enhanced visibility or qualified leads."],
+    ["Is weknowpharma a pharmacy?",
+     "No. weknowpharma is a discovery and connection platform for companies. It does not sell or dispense medicines, does not broker finished products to consumers, and does not handle patient data."]
+  ];
+  main.innerHTML=contentPage("FAQ","Frequently asked questions",
+    '<p class="p-intro">Short answers to the questions buyers and suppliers ask most. Something missing? Write to <a class="link-btn" href="mailto:hello@weknowpharma.com">hello@weknowpharma.com</a>.</p>'+
+    faqs.map(q=>'<details class="faq-item"><summary>'+esc(q[0])+'</summary><p class="faq-a">'+esc(q[1])+"</p></details>").join("")+
+    '<div class="p-cta"><a class="btn btn-primary" href="#/request">Post a request</a><a class="btn btn-ghost" href="#/trust">Trust &amp; security</a></div>');
+}
+function renderContact(main){
+  main.innerHTML=contentPage("Contact","Get in touch",
+    '<p class="p-intro">Questions about the platform, a listing, or a request you are preparing — we read everything.</p>'+
+    '<h2 class="p-h2">Email</h2>'+
+    '<p class="p-body"><a class="link-btn" href="mailto:hello@weknowpharma.com">hello@weknowpharma.com</a></p>'+
+    '<p class="p-body">We aim to reply within two business days. Please don\'t include confidential project details in a first email — once a request is posted, those stay within the matched conversation.</p>'+
+    '<h2 class="p-h2">Sourcing a partner?</h2>'+
+    '<p class="p-body">The fastest way to get real answers from suppliers is to post a request — it takes a few minutes and your identity stays private until you choose otherwise.</p>'+
+    '<div class="p-cta"><a class="btn btn-primary" href="#/request">Post a request</a><a class="btn btn-ghost" href="#/results">Browse suppliers</a></div>');
+}
+
+/* ================= Views: Legal pages ================= */
+function renderImprint(main){
+  main.innerHTML=contentPage("Legal","Impressum",
+    '<h2 class="p-h2">Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz)</h2>'+
+    '<p class="p-body">Quirin Gerl<br>weknowpharma<br>Theodor-Heuss-Str. 48<br>74523 Schwäbisch Hall<br>Deutschland</p>'+
+    '<h2 class="p-h2">Kontakt</h2>'+
+    '<p class="p-body">E-Mail: <a class="link-btn" href="mailto:hello@weknowpharma.com">hello@weknowpharma.com</a><br>Telefon: 0791 94697411</p>'+
+    '<h2 class="p-h2">Umsatzsteuer</h2>'+
+    '<p class="p-body">Kleinunternehmer im Sinne von § 19 UStG. Es wird keine Umsatzsteuer ausgewiesen.</p>'+
+    '<h2 class="p-h2">Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>'+
+    '<p class="p-body">Quirin Gerl, Anschrift wie oben.</p>'+
+    '<h2 class="p-h2">Verbraucherstreitbeilegung</h2>'+
+    '<p class="p-body">weknowpharma ist ein reines B2B-Angebot und richtet sich ausschließlich an Unternehmen. Wir sind zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle weder verpflichtet noch bereit.</p>'+
+    '<h2 class="p-h2">Haftung für Inhalte</h2>'+
+    '<p class="p-body">Die Inhalte dieser Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich; wir sind jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen.</p>'+
+    '<h2 class="p-h2">Haftung für Links</h2>'+
+    '<p class="p-body">Unser Angebot enthält ggf. Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Für diese fremden Inhalte übernehmen wir keine Gewähr. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter verantwortlich.</p>'+
+    '<h2 class="p-h2">Urheberrecht</h2>'+
+    '<p class="p-body">Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet.</p>'+
+    '<p class="p-body"><em>Hinweis: Die derzeit auf der Plattform angezeigten Anbieterprofile sind Beispiel-/Demonstrationsdaten und stehen für keine realen Unternehmen (siehe Nutzungsbedingungen).</em></p>');
+}
+function renderPrivacy(main){
+  main.innerHTML=contentPage("Legal","Datenschutzerklärung",
+    '<h2 class="p-h2">1. Verantwortlicher</h2>'+
+    '<p class="p-body">Verantwortlich für die Datenverarbeitung auf dieser Website im Sinne der DSGVO ist:<br>Quirin Gerl, Theodor-Heuss-Str. 48, 74523 Schwäbisch Hall, Deutschland — E-Mail: <a class="link-btn" href="mailto:hello@weknowpharma.com">hello@weknowpharma.com</a>.</p>'+
+    '<h2 class="p-h2">2. Grundsätzliches</h2>'+
+    '<p class="p-body">Wir verarbeiten personenbezogene Daten nur im erforderlichen Umfang und auf Grundlage der gesetzlichen Bestimmungen (DSGVO, BDSG). Nachfolgend informieren wir über Art, Umfang und Zweck der Verarbeitung.</p>'+
+    '<h2 class="p-h2">3. Hosting (GitHub Pages)</h2>'+
+    '<p class="p-body">Diese Website wird bei GitHub Pages gehostet, einem Dienst der GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. Beim Aufruf der Website verarbeitet GitHub technisch notwendige Zugriffsdaten (u. a. IP-Adresse, Datum/Uhrzeit, abgerufene Datei, übertragene Datenmenge, Browser-/Systeminformationen) in Server-Logfiles, um die Auslieferung und Sicherheit der Seite zu gewährleisten. Rechtsgrundlage ist unser berechtigtes Interesse an einer sicheren und stabilen Bereitstellung (Art. 6 Abs. 1 lit. f DSGVO).</p>'+
+    '<h2 class="p-h2">4. Drittlandübermittlung</h2>'+
+    '<p class="p-body">Beim Hosting über GitHub (USA) kann eine Übermittlung in die USA erfolgen. Die Übermittlung stützt sich auf geeignete Garantien (EU-US Data Privacy Framework bzw. EU-Standardvertragsklauseln).</p>'+
+    '<h2 class="p-h2">5. Anfrage- und Anbieterformulare</h2>'+
+    '<p class="p-body">Über die Formulare „Post a request" (Anfrage) und „List your capabilities" (Anbieter-Eintrag) kannst du uns Daten übermitteln (u. a. Firmenname – sofern angegeben, Arbeits-E-Mail-Adresse, Angaben zu Bedarf bzw. Leistungen). Diese Daten nutzen wir ausschließlich zur Bearbeitung deiner Anfrage bzw. zur Aufnahme deines Eintrags und zur Kontaktaufnahme. Sie werden nicht verkauft.</p>'+
+    '<ul class="p-list">'+
+    '<li><b>Rechtsgrundlage:</b> deine Einwilligung über die Bestätigungscheckbox (Art. 6 Abs. 1 lit. a DSGVO) sowie die Durchführung vorvertraglicher Maßnahmen (Art. 6 Abs. 1 lit. b DSGVO). Die Einwilligung kannst du jederzeit mit Wirkung für die Zukunft widerrufen.</li>'+
+    '<li><b>Auftragsverarbeiter:</b> Die Formularübermittlung erfolgt technisch über den Dienst forminit ([forminit-Anbieter, Sitz/Adresse — aus forminit-AVV übernehmen]). Mit diesem Anbieter besteht ein Auftragsverarbeitungsvertrag nach Art. 28 DSGVO.</li>'+
+    '<li><b>Speicherdauer:</b> Wir speichern die Daten so lange, wie es zur Bearbeitung erforderlich ist bzw. bis zum Widerruf, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</li>'+
+    '</ul>'+
+    '<h2 class="p-h2">6. Cookies und Reichweitenmessung</h2>'+
+    '<p class="p-body">Diese Website setzt derzeit <b>keine</b> Tracking- oder Marketing-Cookies ein und bindet <b>keine</b> externen Analyse- oder Werbedienste ein. Die verwendete Schriftart wird lokal ausgeliefert (kein externer Font-Dienst). Sollte künftig eine Reichweitenmessung eingesetzt werden, wird diese Erklärung ergänzt und – soweit erforderlich – vorab deine Einwilligung eingeholt.</p>'+
+    '<h2 class="p-h2">7. Deine Rechte</h2>'+
+    '<p class="p-body">Dir stehen folgende Rechte zu: Auskunft (Art. 15), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) sowie Widerspruch gegen die Verarbeitung (Art. 21 DSGVO). Eine erteilte Einwilligung kannst du jederzeit widerrufen (Art. 7 Abs. 3 DSGVO).</p>'+
+    '<h2 class="p-h2">8. Beschwerderecht</h2>'+
+    '<p class="p-body">Du hast das Recht, dich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung deiner personenbezogenen Daten zu beschweren (Art. 77 DSGVO).</p>'+
+    '<h2 class="p-h2">9. Aktualität</h2>'+
+    '<p class="p-body">Diese Datenschutzerklärung ist aktuell gültig. Durch Weiterentwicklung der Website oder geänderte rechtliche Vorgaben kann eine Anpassung erforderlich werden.</p>');
+}
+function renderTerms(main){
+  main.innerHTML=contentPage("Legal","Nutzungsbedingungen",
+    '<h2 class="p-h2">1. Geltungsbereich und Anbieter</h2>'+
+    '<p class="p-body">Diese Nutzungsbedingungen gelten für die Nutzung der Plattform weknowpharma, betrieben von Quirin Gerl (Impressum siehe <a class="link-btn" href="#/imprint">oben</a>). Das Angebot richtet sich ausschließlich an Unternehmen (B2B).</p>'+
+    '<h2 class="p-h2">2. Leistungsgegenstand</h2>'+
+    '<p class="p-body">weknowpharma ist eine <b>Entdeckungs- und Vermittlungsplattform</b>, die pharmazeutische Auftraggeber und Dienstleister zusammenführt. weknowpharma ist <b>weder Apotheke noch Arzneimittelhändler</b> und <b>verkauft keine Fertigarzneimittel</b>. weknowpharma wird nicht Vertragspartei etwaiger Verträge, die zwischen Nutzern zustande kommen, und schuldet keinen Vermittlungserfolg.</p>'+
+    '<h2 class="p-h2">3. Hinweis zu angezeigten Daten</h2>'+
+    '<p class="p-body">Die derzeit angezeigten Anbieterprofile sind Beispiel-/Demonstrationsdaten und repräsentieren keine realen Unternehmen. Für die Richtigkeit, Vollständigkeit oder Aktualität später eingestellter Anbieter- oder Kapazitätsangaben wird keine Gewähr übernommen; diese liegen in der Verantwortung der jeweiligen Anbieter.</p>'+
+    '<h2 class="p-h2">4. Pflichten der Nutzer</h2>'+
+    '<p class="p-body">Nutzer sichern zu, wahrheitsgemäße Angaben zu machen und keine rechtswidrigen Inhalte zu übermitteln. Eine missbräuchliche Nutzung (z. B. automatisiertes Auslesen, Spam) ist untersagt.</p>'+
+    '<h2 class="p-h2">5. Haftung</h2>'+
+    '<p class="p-body">Wir haften unbeschränkt für Vorsatz und grobe Fahrlässigkeit sowie nach dem Produkthaftungsgesetz. Bei einfacher Fahrlässigkeit haften wir nur bei Verletzung einer wesentlichen Vertragspflicht (Kardinalpflicht) und begrenzt auf den vertragstypischen, vorhersehbaren Schaden. Im Übrigen ist die Haftung ausgeschlossen.</p>'+
+    '<h2 class="p-h2">6. Anwendbares Recht</h2>'+
+    '<p class="p-body">Es gilt das Recht der Bundesrepublik Deutschland. Ist der Nutzer Kaufmann, juristische Person des öffentlichen Rechts oder öffentlich-rechtliches Sondervermögen, ist Gerichtsstand der Sitz des Anbieters.</p>'+
+    '<h2 class="p-h2">7. Änderungen</h2>'+
+    '<p class="p-body">Wir behalten uns vor, diese Nutzungsbedingungen mit Wirkung für die Zukunft anzupassen. Die jeweils aktuelle Fassung ist auf der Website abrufbar.</p>');
+}
+
 /* ================= View: Not found ================= */
 function renderNotFound(main,opts){
   opts=opts||{};
@@ -1296,3 +1526,4 @@ route();
 </script>
 </body>
 </html>
+
